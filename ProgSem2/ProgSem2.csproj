@@ -46,6 +46,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CallNumber.cs" />
+    <Compile Include="FindCallNumbers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FindCallNumbers.Designer.cs">
+      <DependentUpon>FindCallNumbers.cs</DependentUpon>
+    </Compile>
     <Compile Include="IdentifyingAreas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -66,6 +73,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FindCallNumbers.resx">
+      <DependentUpon>FindCallNumbers.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="IdentifyingAreas.resx">
       <DependentUpon>IdentifyingAreas.cs</DependentUpon>
     </EmbeddedResource>
@@ -103,6 +113,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\backimage1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boardff.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\whowantstobeamil.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

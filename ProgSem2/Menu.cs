@@ -33,9 +33,9 @@ namespace ProgSem2
 
         private void btnFindCallNumber_Click(object sender, EventArgs e)
         {
-            /* this.Hide();
-            FindCallNumbers findCallNumbersForm = new FindCallNumbers();
-            findCallNumbersForm.Show();*/
+            this.Hide();
+            FormFindCallNumbers findCallNumbersForm = new FormFindCallNumbers();
+            findCallNumbersForm.Show();
 
         }
 
